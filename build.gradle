@@ -12,6 +12,9 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 jar {
+    manifest {
+        attributes 'Main-Class': 'hello.Application'
+    }
     baseName = 'friends-mgt'
     version = '0.1.0'
 }
