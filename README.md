@@ -20,17 +20,17 @@ chmod +x gradlew
 * Sample request
 ```
 {
-  friends:
+  "friends":
     [
-      'andy@example.com',
-      'john@example.com'
+      "andy@example.com",
+      "john@example.com"
     ]
 }
  ```
 * Sample response
 ```
 {
-  "success": true
+  "success": "true"
 }
 ```
 #### Retrieve the friends list for an email address
@@ -39,18 +39,18 @@ chmod +x gradlew
 * Sample request
 ```
 {
-  email: 'andy@example.com'
+  "email": "andy@example.com"
 }
  ```
 * Sample response
 ```
 {
-  "success": true,
-  "friends" :
+  "success": "true",
+  "friends":
     [
-      'john@example.com'
+      "john@example.com"
     ],
-  "count" : 1
+  "count": 1
 }
 ```
 #### Retrieve common friends list between two email addresses
@@ -59,22 +59,22 @@ chmod +x gradlew
 * Sample request
 ```
 {
-  friends:
+  "friends":
     [
-      'andy@example.com',
-      'john@example.com'
+      "andy@example.com",
+      "john@example.com"
     ]
 }
  ```
 * Sample response
 ```
 {
-  "success": true,
-  "friends" :
+  "success": "true",
+  "friends":
     [
-      'common@example.com'
+      "common@example.com"
     ],
-  "count" : 1
+  "count": 1
 }
 ```
 
@@ -91,7 +91,7 @@ chmod +x gradlew
 * Sample response
 ```
 {
-  "success": true
+  "success": "true"
 }
 ```
 ### Messages
@@ -108,7 +108,7 @@ chmod +x gradlew
 * Sample response
 ```
 {
-  "success": true
+  "success": "true"
   "recipients":
     [
       "lisa@example.com",
@@ -129,6 +129,6 @@ chmod +x gradlew
 * Sample response
 ```
 {
-  "success": true
+  "success": "true"
 }
 ```
